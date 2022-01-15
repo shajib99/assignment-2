@@ -1,0 +1,582 @@
+/* -------------------
+    Common Styles 
+---------------------*/
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section-title {
+  margin-bottom: 20px;
+  font-size: 28px;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* ---------------------
+    Common Styles END
+-----------------------*/
+
+/* ---------------------------
+    TOP Section Styles BEGIN
+-----------------------------*/
+#top-section {
+  background: #ffffff;
+  min-height: 100vh;
+  padding-bottom: 10px;
+}
+#Products,
+#featured {
+  padding: 50px 0;
+}
+
+.header {
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #2d25a0;
+  width: 100%;
+  z-index: 100;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-menu ul li {
+  margin-right: 30px;
+}
+
+.nav-menu ul li a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  transition: color 0.3s;
+  color: #ffffff;
+}
+
+.nav-menu ul li a:hover {
+  color: #e02c6d;
+}
+
+.login {
+  color: #ffffff;
+  background: #e02c6d;
+  border: 2px solid #e02c6d;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 4px 15px;
+  color: #ffffff;
+  transition: background-color 0.3s;
+}
+.cart {
+  color: #ffffff;
+  background: lightseagreen;
+  border: 2px solid lightseagreen;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 4px 15px;
+  color: #ffffff;
+  transition: background-color 0.3s;
+}
+
+.login i {
+  margin-right: 5px;
+}
+.cart i {
+  margin-right: 5px;
+}
+
+.login:hover {
+  background-color: black;
+}
+.cart:hover {
+  background-color: black;
+}
+
+.inner-banner {
+  display: grid;
+  align-items: center;
+  padding-top: 150px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.half-width {
+  width: 100%;
+  padding-left: 50px;
+}
+
+.top-title {
+  margin-bottom: 50px;
+}
+
+.top-title h1 {
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 70px;
+  color: #3a3a3a;
+  margin-bottom: 27px;
+  max-width: 503px;
+}
+
+.top-banner img {
+  width: 475px;
+  height: 475px;
+}
+
+.prebook-button {
+  color: #ffffff;
+  background: #e02c6d;
+  border-radius: 20px;
+  border: 2px solid #e02c6d;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 5px 15px;
+  color: #ffffff;
+  transition: background-color 0.3s;
+}
+
+.prebook-button i {
+  margin-left: 5px;
+}
+.prebook-button:hover {
+  background-color: black;
+}
+/* --------------------------
+    TOP Section Styles END
+----------------------------*/
+
+/* --------------------------
+    Products allignment 
+    section styles BEGIN
+----------------------------*/
+#products {
+  background: #fff;
+  padding: 100px 0;
+}
+
+.inner-product {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.product {
+  background: #ffffff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+}
+
+.product-image {
+  max-height: 290px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.product-image img {
+  transition: 0.3s;
+  width: 100%;
+}
+
+.product:hover .product-image img {
+  transform: scale(1.2);
+}
+
+.product h2 {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 40px;
+  color: #18191f;
+}
+
+.product p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #6c6c6c;
+  margin-bottom: 30px;
+}
+.fa-star.filled {
+  color: orange;
+}
+/* --------------------------
+    Products allignment 
+    section styles END
+----------------------------*/
+
+/* --------------------------
+       See More Khuchra
+     section styles BEGIN
+----------------------------*/
+.see-more {
+  text-align: right;
+  margin-bottom: 35px;
+}
+.colour-text {
+  color: #e02c6d;
+  font-weight: 700;
+  padding-right: 5%;
+}
+/* -----------------------------
+     Ei R ki Khuchra dekhe ore
+      kom styles diyechi :p
+   ----------------------------*/
+
+/* ------------------------------
+   Featured section styles BEGIN
+--------------------------------*/
+#featured {
+  margin: 0px 4%;
+  padding: 100px 0%;
+  background: #ffffff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.inner-featured {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.featured-banner {
+  width: 100%;
+}
+
+.featured-banner img {
+  width: 80%;
+}
+
+.featured-title {
+  width: 100%;
+  padding-right: 70px;
+}
+
+.featured-title h2 {
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 60px;
+  color: #0a0826;
+  margin-bottom: 8px;
+}
+
+.featured-title p {
+  font-size: 16px;
+  line-height: 28px;
+  color: #6c6c6c;
+  margin-bottom: 24px;
+}
+/* -----------------------------
+   Featured section styles END
+-------------------------------*/
+
+/* -----------------------------
+   Footer Section Styles BEGIN
+-------------------------------*/
+footer {
+  background-color: #0a0826;
+  padding: 25px 10px;
+  text-align: center;
+}
+.social-links {
+  margin-bottom: 20px;
+}
+
+.social-links ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-links ul li {
+  margin: 0 7px;
+  padding: 10px;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  position: relative;
+  transition: 0.3s;
+  background-color: #ddd;
+}
+
+.social-links ul li:nth-child(1):hover i {
+  color: orangered;
+}
+
+.social-links ul li:nth-child(2):hover i {
+  color: rgba(48, 127, 245, 0.918);
+}
+
+.social-links ul li:nth-child(3):hover i {
+  color: #00acee;
+}
+
+.social-links ul li:nth-child(4):hover i {
+  color: red;
+}
+
+.social-links ul li a i {
+  font-size: 18px;
+  margin: 0 7px;
+  color: #969bab;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: all 0.3s;
+  transform: translateY(-50%) translateX(-87%);
+}
+
+.social-links ul li:nth-child(1) i {
+  transform: translateY(-50%) translateX(-93%);
+}
+
+.social-links ul li:nth-child(4) i {
+  transform: translateY(-50%) translateX(-83%);
+}
+.footer-title {
+  color: #fff;
+  font-family: "Lobster Two", cursive;
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+footer p {
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+}
+/* -----------------------------
+    Footer section styles END
+-------------------------------*/
+
+/*===========================
+    Responsive Styles BEGIN
+ ============================*/
+
+/*    For Tablet or ipad devices
+           (991px and below)        */
+@media only screen and (max-width: 991px) {
+  .login {
+    font-size: 13px;
+    line-height: 20px;
+    padding: 4px 10px;
+  }
+  .cart {
+    font-size: 13px;
+    line-height: 20px;
+    padding: 4px 10px;
+  }
+
+  .prebook-button {
+    font-size: 13px;
+    line-height: 20px;
+    padding: 4px 10px;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .inner-featured {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .header {
+    padding: 10px 0;
+  }
+
+  .inner-product {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .top-title h1 {
+    font-size: 34px;
+    line-height: 47px;
+    margin-bottom: 27px;
+    width: 282px;
+  }
+
+  .half-width.top-banner {
+    padding-bottom: 50px;
+    padding-top: 20px;
+  }
+
+  .nav-menu ul li {
+    margin-right: 15px;
+  }
+
+  .nav-menu ul li a {
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  #top-section {
+    padding-bottom: 0px;
+    min-height: auto;
+  }
+
+  #Products,
+  #featured {
+    padding: 50px 0;
+  }
+}
+
+/*  For Standard Smartphone View
+        (688px and below)        */
+
+@media only screen and (max-width: 688px) {
+  #top-section {
+    padding-bottom: 15px;
+    height: auto;
+  }
+
+  .header {
+    position: static;
+  }
+
+  .half-width.top-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+
+  .nav-menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .nav-menu ul li {
+    width: 100%;
+    text-align: center;
+    padding-left: 20px;
+    margin-bottom: 5px;
+  }
+
+  .half-width {
+    width: 100%;
+  }
+
+  .nav-menu ul li a {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    border-bottom: 1px solid #ea4c89;
+  }
+
+  .inner-product {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .inner-featured {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+
+  .product h2 {
+    margin-bottom: 10px;
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  .featured-title h2 {
+    font-size: 25px;
+    line-height: 29px;
+    margin-bottom: 20px;
+  }
+
+  .featured-title {
+    padding-right: 15px;
+  }
+
+  .section-title {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+
+  .inner-banner {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 63px 0 0;
+    overflow: hidden;
+  }
+
+  .top-title h1 {
+    font-size: 31px;
+    line-height: 40px;
+  }
+
+  .half-width.top-banner {
+    padding-bottom: 50px;
+    padding-top: 20px;
+  }
+
+  .container.inner-banner {
+    text-align: center;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+
+  #Products,
+  #featured {
+    padding: 50px 0;
+  }
+}
+
+/*===========================
+     Responsive Style END 
+ ============================*/
